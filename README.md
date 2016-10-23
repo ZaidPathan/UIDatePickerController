@@ -12,7 +12,7 @@ iOS native style like Date picker
 - Add `UIDatePickerController.swift` file to your project.
 - Add below code.
     
-    UIDatePickerController.pickDate(title: "Choose Date", pickTitle: "Select", cancelTitle: "Cancel", delegate: self)
+      UIDatePickerController.pickDate(title: "Choose Date", pickTitle: "Select", cancelTitle: "Cancel", delegate: self)
 
 Handle `UIDatePickerControllerDelegate`:
 
