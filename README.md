@@ -13,10 +13,8 @@ iOS native style like Date picker
 - Add below code.
 
       UIDatePickerController.pickDate(title: "Choose Date", pickTitle: "Select", cancelTitle: "Cancel", delegate: self)
-      <br>
 Handle `UIDatePickerControllerDelegate`:
-      <br>
-
+    
     extension YourViewController:UIDatePickerControllerDelegate{
         func didPickDate(data: Date?) {
             print(data!)
