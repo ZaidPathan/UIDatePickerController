@@ -4,13 +4,13 @@ iOS native style like Date picker
 [![UIDatePickerController](https://github.com/ZaidPathan/UIDatePickerController/blob/master/demo.png)](https://github.com/ZaidPathan/UIDatePickerController)
 
 # Features
-___
+_
 - Easy to use
 - `Swift3+` and `Xcode8+`
 
 
 # Easy to Use
-___
+_
 
 - Add `UIDatePickerController.swift` file to your project.
 - Add below code.
@@ -31,6 +31,6 @@ Handle `UIDatePickerControllerDelegate`:
 
 
 # To do
-___
+_
 - Support orientation
 - More customizable
