@@ -12,7 +12,7 @@ ___
 # Easy to Use
 ___
 
-- Add UIDatePickerController.swift file to your project.
+- Add `UIDatePickerController.swift` file to your project.
 - Add below code.
     
     UIDatePickerController.pickDate(title: "Choose Date", pickTitle: "Select", cancelTitle: "Cancel", delegate: self)
