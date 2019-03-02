@@ -12,23 +12,16 @@ class ViewController: UIViewController,UIDatePickerControllerDelegate {
     
     @IBOutlet weak var IBlblDate: UILabel!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
     @IBAction func IBActionPickDate(_ sender: UIButton) {
         UIDatePickerController.pickDate(title: "Choose Date", pickTitle: "Select", cancelTitle: "Cancel", delegate: self)
     }
     
     func didPickDate(data: Date?) {
-        IBlblDate.text = data?.description
-        print(data!)
+        let dateForrmatter = DateFormatter()
+        dateForrmatter.dateFormat = "dd-MM-yyyy"
+        if let date = data {
+            IBlblDate.text = dateForrmatter.string(from: date)
+        }
     }
     
     func didCancelPickingDate() {
